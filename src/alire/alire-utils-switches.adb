@@ -94,8 +94,7 @@ package body Alire.Utils.Switches is
    is (case S.Kind is
           when No     => Empty_List,
           when Yes    => Empty_List
-                         .Append (GNAT_Debug_Info)
-                         .Append (GNAT_Extra_Exception_Info),
+                         .Append (GNAT_Debug_Info),
           when Custom => S.List);
 
    --------------
